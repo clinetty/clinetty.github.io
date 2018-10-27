@@ -1,0 +1,134 @@
+<!doctype html>
+<!--Declaration to use the latest version of html-->
+<html>
+<!--First section: head-->    
+<!--link to external files i.e. Css-->
+<!--bootstrap css link comes before the internal css link-->
+<!--you install bootstrap by 1) pasting the url(CDN) and 2) by downloading the bootstrap file and calling it -->
+    <head>
+       <title>Portfolio Website</title> 
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+       <link href="css/style.css" rel="stylesheet">
+    </head>
+<!--Second section: body-->
+    <body>
+        <!--nav bar-->
+        <nav class = "navbar navbar-inverse">
+            <div class = "container-fluid">
+                <div class = "navbar-header">
+                    <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#myNavbar">
+                <!--span content inside another content-->
+                  <span class = "icon-bar"></span>  
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                </button>
+                <a class = "navbar-brand" href = "#">Portfolio Website</a> 
+                </div>
+            <div class= "collapse navbar-collapse" id = "myNavbar">
+                   <!--<ul class = "nav navbar-nav">
+                        <li>
+                            <a href = "#">About</a>
+                        </li>
+                        <li>
+                            <a href = "#">Journey</a>
+                        </li>
+                        <li>
+                            <a href = "#">Aspirations</a>
+                        </li>
+                    </ul>--> 
+                    
+                    <ul class = "nav navbar-nav navbar-right">
+                        <li class ="active"><span class="sr-only">(current)</span><a href = "index.html">Home</a></li>
+                        <li><a href = "about.html">About Me</a></li>
+                        <li><a href = "#">My Skills</a></li>
+
+                    </ul>
+
+            </div>
+            
+
+            </div>
+
+                
+        </nav>
+        <!--Div's are section of a page-->
+        <!--Attributes are elements in between a tag: give mo info about a tag-->
+        <!--start with div container, followed by row then finally collumn-->
+        <!--begining of container-->
+
+        <div class = "container">
+                <!--rows followed by columns-->
+                <!--beggining of row-->
+                <div class = "row">
+                    <!--first column-->
+                    <div class = "col-md-4">                            
+                        <h1 class = "hobbies">Clinto</h1>
+                        <h6>Web Dev</h6>
+                        <p id = "italic"> Coding is awesome</p>
+                        <h4 id = "intro"> Im a full stack Web dev, graphic designer. i love to code and solve world problems around me. I'm versatile in python, flask, git, postgre. Dont forget to smile :-)</h4>
+                    </div>
+                    <!--end of first column-->
+                    <!--second column-->
+                    <div class = "col-md-4">
+                            <img src="images/photo-1528372444006-1bfc81acab02.jpeg" style="width:100%; height:100%;" />
+                                                       
+                    </div>
+                    <!--end of second column-->
+                    <!--third column-->
+                    <div class = "col-md-4">
+                            <div class = "hobbies">
+                                    <h3>My Hobbies</h3>
+                                   <ul>
+                                       <li>Gaming</li>
+                                       <li>Programming</li>
+                                       <li>Watching Football</li>
+                                   </ul>
+                                </div>
+                                   <br>
+                                <div class= "skills">
+                                   <h3>My skills</h3>
+                                   <ul>
+                                       <li>Web dev</li>
+                                       <li>Programming</li>
+                                       <li>Graphic design</li>
+                                   </ul>
+                                </div>
+                    </div>  
+                    <!--end of third column-->           
+                  
+                               
+                </div>
+                <!--end of row-->
+            </div>
+            
+            </div>
+        
+        <!--<button class="btn btn-primary" id="button" onclick="firstFunction()">My Button</button>
+        </div>-->
+        
+        <!--end of container-->
+        <!--jquery-->
+        <!--<div class = "container">
+            <div class ="row">
+                <div class = "col-md-12">
+                    <h4>Hit me up! </h4>
+                </div>
+            <div class = "row">
+                <div class = "col-md-12">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--Jscript is placed last before closing body for it to load last-->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!--javascript file-->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
+<!--xs:small phone, sm:tablet, md:laptop, lg: screen large than laptop, we have a max of 12 columns in a grid system if u need three rows, divide 12/3=4 ie col-md-4 -->
